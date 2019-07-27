@@ -50,15 +50,21 @@
 			}
 
 			h1 {
-				background: black url(img/bg@0,5x.jpg) no-repeat;
+				background: black url(img/bg@0,5x.jpg) no-repeat center top;
 				background-attachment: fixed;
-				background-size: cover;
+				background-size: contain;
 				height: 50vw;
 				margin: 0 auto;
 				width: 80%;
 				-webkit-mask: url(img/mask-bot.png);
 				-webkit-mask-repeat: none;
 				-webkit-mask-size: contain;
+			}
+			
+			@media (min-width:50em) {
+				h1 {
+					background-image: url(img/bg.jpg);
+				}
 			}
 
 			h2 {
