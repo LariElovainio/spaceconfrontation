@@ -82,7 +82,7 @@
 				section,h2 {
 					background: linear-gradient( 45deg, #00bdb7 0%, #a8ee87 70%, #76f6ee 100% );
 					background: linear-gradient( 45deg, #009c97 0%, #8ad16a 70%, #1dd8cb 100% );
-					background: linear-gradient( 65deg, #022322 0%, #16d3e4 85%, #8ad16a 90%, #033e3a 100% );
+					background: linear-gradient( 65deg, #022322 10%, #16d3e4 60%, #8ad16a 65%, #033e3a 75% );
 					-webkit-background-clip: text;
 					-webkit-text-fill-color: transparent;
 				}
@@ -92,7 +92,7 @@
 				section,h2 {
 					background: linear-gradient( 45deg, #00bdb7 0%, #a8ee87 70%, #76f6ee 100% );
 					background: linear-gradient( 45deg, #009c97 0%, #8ad16a 70%, #1dd8cb 100% );
-					background: linear-gradient( 65deg, #022322 0%, #16d3e4 85%, #8ad16a 90%, #033e3a 100% );
+					background: linear-gradient( 65deg, #022322 10%, #16d3e4 50%, #8ad16a 75%, #033e3a 85% );
 					background-clip: text;
 					text-fill-color: transparent;
 				}
@@ -115,7 +115,7 @@
 				border-bottom: .75em solid #1e1c43;
 				color: #a1b5b8;
 				font-size: .85em;
-				margin: 5em 0 0;
+				margin: 15% 0 0;
 				text-align: center;
 			}
 			
@@ -127,9 +127,42 @@
 				height: 4em;
 				margin: 0 auto 1em;
 				max-width: 10em;
-				opacity: .3;
+				opacity: .15;
 				width: 25%;
 			}
+			
+			@media (prefers-color-scheme: dark) {
+				body {
+					background: #121121;
+					color: #2fd8ef;
+				}
+
+				footer {
+					border-color: #49f3f0;
+				}
+
+				h2 {
+					color: #25fff8;
+				}
+			
+				@supports (-webkit-background-clip: text) {
+					section,h2 {
+						background-image: linear-gradient( -35deg, #0b546c 0%, #16d3e4 65%, #9dd16a 80%, #033e3a 85% );
+					}
+				}
+			
+				@supports (background-clip: text) {
+					section,h2 {
+						background-image: linear-gradient( -35deg, #0b546c 0%, #16d3e4 75%, #9dd16a 80%, #033e3a 90% );
+					}
+				}
+			
+				footer::before {
+					background-image: url(img/SC-logo-WoT.png);
+					opacity: .75;
+				}
+			}
+		
 		</style>
 	</head>
 	<body>
