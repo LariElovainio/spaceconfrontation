@@ -74,6 +74,16 @@
 					-webkit-text-fill-color: transparent;
 				}
 			}
+			
+			@supports (background-clip: text) {
+				section,h2 {
+					background: linear-gradient( 45deg, #00bdb7 0%, #a8ee87 70%, #76f6ee 100% );
+					background: linear-gradient( 45deg, #009c97 0%, #8ad16a 70%, #1dd8cb 100% );
+					background: linear-gradient( 65deg, #022322 0%, #16d3e4 85%, #8ad16a 90%, #033e3a 100% );
+					background-clip: text;
+					text-fill-color: transparent;
+				}
+			}
 
 			p {
 				margin: 1em auto;
